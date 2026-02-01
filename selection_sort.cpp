@@ -1,8 +1,8 @@
 
 
 // selection sort algorithm  
-// find min and place it at the begining in iterative way
-
+// EVERY TIME IT find minIMUM ELELEMENT FROM STARTING TO END  and place it at the begining in iterative way
+// SO SORTING PERFOMR FROM LEFT TO RIGHT
 #include<iostream>
 #include<vector>
 #include<algorithm>
