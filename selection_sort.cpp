@@ -1,6 +1,8 @@
 
 
-// selection sort algorithm
+// selection sort algorithm  
+// find min and place it at the begining in iterative way
+
 #include<iostream>
 #include<vector>
 #include<algorithm>
