@@ -3,6 +3,18 @@
 #include<vector>
 using namespace std;
 
+
+// log(n) time to divide and n time to merge
+// as  1 divide=2 two arr
+// 2 divide =4 two arr
+// 3 divide =8 two arr
+// k divide = 2^k two arr element
+// k is defined as n=2^k => k= log(n)
+// hence log(n) time to divide
+
+// total division = log(n)
+// merging each level takes n time
+
 void merge(vector<int>&arr,int low,int mid,int high){
 
     int left=low; int right=mid+1;
