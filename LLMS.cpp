@@ -53,17 +53,15 @@ LLMS* merge(LLMS* low,LLMS* high){
             right=right->next;
         }
     }
-    while (left!=nullptr)
+    // here eithr left or right is remaining so only one if condition will work 
+    //and as it is chain so just add connect the remaining part in O(1) time 
+    if(left!=nullptr)
     {
         temp->next=left;
-        temp=temp->next;
-        left=left->next;
     }
-    while (right!=nullptr)
+    if(right!=nullptr)
     {
         temp->next=right;
-        temp=temp->next;
-        right=right->next;
     }
     temp=dummy->next;
     delete dummy;
