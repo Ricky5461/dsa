@@ -23,7 +23,7 @@ struct LLMS{
 LLMS* findMidl(LLMS*head){
     LLMS* slow=head;
     LLMS* fast=head->next;
-    while(fast!=nullptr && fast->next!=nullptr){
+    while(fast!=nullptr && fast->next!=nullptr){    // OR gate will not add as if only one node then fast is as head->next already so if again do then it runtime error
         fast=fast->next->next;
         slow=slow->next;
     }
