@@ -7,13 +7,15 @@ int main(){
     vector<int>arr={2,-1,0,0,-2,1,2,-1,1,0,2,-2,-1};
     vector<vector<int>>vect1;
     sort(arr.begin(),arr.end());int target=0;
+    int n= arr.size();
+    if(n<4) return 0;
     for(int i=0;i<arr.size()-2;i++){
         if(i>0 && arr[i]==arr[i-1])continue; // skiiping duplicate
         for(int j=i+1;j<arr.size()-1;j++){
         if(j>i+1&& arr[j]==arr[j-1]) continue;   // skiping duplicate
         int k= j+1;int l= arr.size()-1;
         while(k<l){
-           int sum=arr[i]+arr[j]+arr[k]+arr[l];
+           long long sum=(long long)arr[i]+arr[j]+arr[k]+arr[l];
            if(sum>target){
             l--;
            }
