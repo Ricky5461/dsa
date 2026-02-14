@@ -7,6 +7,7 @@ int main(){
     vector<int>arr={2,-1,0,0,-2,1,2,-1,1,0,2,-2,-1};
     vector<vector<int>>vect1;
     sort(arr.begin(),arr.end());int target=0;
+    // if element is less than 4 then we can not find any quadruple so return 0
     int n= arr.size();
     if(n<4) return 0;
     for(int i=0;i<arr.size()-2;i++){
@@ -15,6 +16,7 @@ int main(){
         if(j>i+1&& arr[j]==arr[j-1]) continue;   // skiping duplicate
         int k= j+1;int l= arr.size()-1;
         while(k<l){
+           // if element long long then we can not store in int so  typecast to long long to prevent overflow
            long long sum=(long long)arr[i]+arr[j]+arr[k]+arr[l];
            if(sum>target){
             l--;
