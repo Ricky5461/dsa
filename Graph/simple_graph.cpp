@@ -1,3 +1,5 @@
+// This is a simple graph representation using adjacency matrix
+// space complexity of adjacency matrix is O(n^2) where n is number of node in
 #include<iostream>
 #include<vector>
 using namespace std;

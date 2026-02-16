@@ -1,4 +1,5 @@
-// total space complexity of adjancy list is O(n+2m) n for node and 2m for total degree of node
+// undirected graph using adjancy list 
+//total space complexity of adjancy list is O(n+2m) n for node and 2m for total degree of node
  
 #include<iostream>
 #include<vector>
